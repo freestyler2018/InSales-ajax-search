@@ -1,0 +1,48 @@
+
+/* Стили автокомплита */
+.autocomplete-suggestions {
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-top: 1px solid white;
+  background: #FFF;
+  overflow: auto;
+  margin-top: -2px;
+}
+.autocomplete-suggestion {
+  padding: 5px; white-space: nowrap; overflow: hidden;
+}
+.autocomplete-selected {
+  color: red;
+   }
+.autocomplete-suggestions strong {
+  font-weight: normal; color: red;
+   }
+
+/* Базовые стили формы от IL */
+
+.search-form {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+  background: #f1f1f1 none repeat scroll 0% 0%;
+  position: relative; }
+  /* line 12, _layout.scss */
+  .search-form .search-input {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    font-size: 14px; }
+  /* line 20, _layout.scss */
+  .search-form .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    bottom: 0;
+    width: 40px;
+    color: #cdcdcd; }
+
+.search-form:hover .search-button {
+  color: #ff000c; }

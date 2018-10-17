@@ -1,0 +1,20 @@
+
+<!-- Форма поиска -->
+
+<script src="/js/autocomplete.js"></script>
+<script src="/js/javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<form action="/search" method="get" class="search-form">
+   <input type="hidden" name="lang" value="{{ language.locale }}">
+   <input class="input-field search-input js-search-input"
+          type="text"
+          placeholder="{{ messages.search_title }}"
+          name="q"
+          value="{% if search.query != empty %}{{ search.query }}{% endif %}"/>
+
+   <button class="button is-primary search-button" type="submit">
+     <i class="icon search-icon ion-ios-search"></i>
+   </button>
+   <div class="autocomplete-suggestions"></div>
+ </form>
